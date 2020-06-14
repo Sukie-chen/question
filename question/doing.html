@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>doing</title>
+    <link rel="stylesheet" type="text/css" href="./css/doing.css">
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <script type="text/javascript" src="./js/doing.js"></script>
+</head>
+<body>
+    <div class="box">
+        <!-- 选项框 -->
+        <div class="scroll">
+            <div class="multiple">
+                <label>选择题</label>
+            </div>
+            <div class="judge">
+                <label >判断题</label>
+            </div>
+        </div>
+        <!-- 作答区 -->
+        <div class="doing">
+            <!-- 考生姓名与考试剩余时间 -->
+            <div class="info">
+                <div class="name">考生:</div>
+                <div class="time">01:59</div>
+            </div>
+            <!-- 题目 -->
+            <div class="question">
+
+            </div>
+            <!-- 选项 -->
+            <div class="MultipleAnswer">
+                <input type="checkbox" name="" id="box1" value="A"/>
+                <label for="box1" class="boxA"></label><br>
+                <input type="checkbox" name="" id="box2" value="B"/>
+                <label for="box2" class="boxB"></label><br>
+                <input type="checkbox" name="" id="box3" value="C"/>
+                <label for="box3" class="boxC"></label><br>
+                <input type="checkbox" name="" id="box4" value="D">
+                <label for="box4" class="boxD"></label>
+            </div>
+            <div class="JudgeAnswer">
+                <input type="radio" name="" id="box5" value="0"/>
+                <label for="box5" class="boxT">对</label><br>
+                <input type="radio" name="" id="box6" value="1"/>
+                <label for="box6" class="boxF">错</label><br>
+            </div>
+            <!-- 上一题与下一题  提交按钮 -->
+            <div class="btnNav">
+                <button class="prev">上一题</button>
+                <button class="next">下一题</button>
+                <button class="submit">提交</button>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

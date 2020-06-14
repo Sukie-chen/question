@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <title>down</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .result{
+            width: 400px;
+            height: 120px;
+            background-color: #5961F9;
+            font-size: 30px;
+            text-align: center;
+            line-height: 120px;
+            color: azure;
+            margin: 100px auto 0;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            function getData(){
+                var urlinfo = window.location.href//获取url 
+                let value1 = urlinfo.split("?name=")[1].split("&score=")[0]    
+                let name = decodeURI(value1)
+                let value2 = urlinfo.split("?name=")[1].split("&score=")[1]
+                let score = decodeURI(value2)
+                $('.result').html('考生：'+name+'&nbsp;&nbsp;&nbsp;&nbsp;成绩：' + score);
+            }
+            getData();
+        })
+    </script>
+
+</head>
+<body>
+    <div class="result"></div>
+</body>
+</html>
